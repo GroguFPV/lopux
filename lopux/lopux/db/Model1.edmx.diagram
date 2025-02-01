@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6bd79a3dd46e4e618e49f53b66d4c4b0" Name="Diagram1">
+        <EntityTypeShape EntityType="LopuxDbModel.Agent" Width="1.5" PointX="0.75" PointY="11" />
+        <EntityTypeShape EntityType="LopuxDbModel.AgentType" Width="1.5" PointX="1.5" PointY="18.5" />
+        <EntityTypeShape EntityType="LopuxDbModel.DeliveryType" Width="1.5" PointX="1.5" PointY="8.5" />
+        <EntityTypeShape EntityType="LopuxDbModel.Manager" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="LopuxDbModel.Material" Width="1.5" PointX="8" PointY="8.125" />
+        <EntityTypeShape EntityType="LopuxDbModel.material_type" Width="1.5" PointX="5.75" PointY="11.75" />
+        <EntityTypeShape EntityType="LopuxDbModel.Order" Width="1.5" PointX="3.75" PointY="8.125" />
+        <EntityTypeShape EntityType="LopuxDbModel.OrderDecision" Width="1.5" PointX="6" PointY="3.875" />
+        <EntityTypeShape EntityType="LopuxDbModel.OrderState" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LopuxDbModel.Priority" Width="1.5" PointX="3" PointY="3.875" />
+        <EntityTypeShape EntityType="LopuxDbModel.Product" Width="1.5" PointX="11" PointY="2.125" />
+        <EntityTypeShape EntityType="LopuxDbModel.ProductType" Width="1.5" PointX="8.75" PointY="2.75" />
+        <EntityTypeShape EntityType="LopuxDbModel.SalePoint" Width="1.5" PointX="1.5" PointY="16.125" />
+        <EntityTypeShape EntityType="LopuxDbModel.SalesHistory" Width="1.5" PointX="8.75" PointY="5.875" />
+        <EntityTypeShape EntityType="LopuxDbModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="11.875" />
+        <EntityTypeShape EntityType="LopuxDbModel.Unit" Width="1.5" PointX="5.75" PointY="8.75" />
+        <AssociationConnector Association="LopuxDbModel.FK_Agent_AgentType" />
+        <AssociationConnector Association="LopuxDbModel.FK_Agent_SalePoint" />
+        <AssociationConnector Association="LopuxDbModel.FK_Priority_Agent" />
+        <AssociationConnector Association="LopuxDbModel.FK_Order_DeliveryType" />
+        <AssociationConnector Association="LopuxDbModel.FK_OrderDecision_Manager" />
+        <AssociationConnector Association="LopuxDbModel.FK_Priority_Manager" />
+        <AssociationConnector Association="LopuxDbModel.FK_Material_material_type" />
+        <AssociationConnector Association="LopuxDbModel.FK_Material_Unit" />
+        <AssociationConnector Association="LopuxDbModel.FK_OrderDecision_Order" />
+        <AssociationConnector Association="LopuxDbModel.FK_OrderDecision_OrderState" />
+        <AssociationConnector Association="LopuxDbModel.FK_Product_ProductType1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
